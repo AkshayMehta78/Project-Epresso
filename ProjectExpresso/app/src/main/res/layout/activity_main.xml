@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer"
         xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -45,12 +42,13 @@
         android:background="@android:color/white"
         android:layout_below="@+id/tabs"/>
 
-    </LinearLayout>
         <FrameLayout
             android:id="@+id/container"
             android:layout_width="match_parent"
             android:clickable="true"
             android:layout_height="match_parent"/>
+
+    </LinearLayout>
 
         <!-- android:layout_marginTop="?android:attr/actionBarSize"-->
         <fragment
@@ -62,4 +60,3 @@
             android:layout_marginTop="@dimen/actionBarheight"
             app:layout="@layout/fragment_navigation_drawer"/>
     </android.support.v4.widget.DrawerLayout>
-</RelativeLayout>

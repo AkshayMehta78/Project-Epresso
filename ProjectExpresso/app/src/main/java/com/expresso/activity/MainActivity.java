@@ -57,7 +57,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
                 // Code goes here
             }
         });
-
 	}
 
 
@@ -78,7 +77,6 @@ public class MainActivity extends ActionBarActivity implements ActionBar.TabList
         tabsStrip.setViewPager(viewPager);
         // set up toolbar
         setSupportActionBar(toolbar);
-
         mNavigationDrawerFragment = (NavigationDrawerFragment) getFragmentManager().findFragmentById(R.id.fragment_drawer);
         mNavigationDrawerFragment.setup(R.id.fragment_drawer, (DrawerLayout) findViewById(R.id.drawer), toolbar);
     }
